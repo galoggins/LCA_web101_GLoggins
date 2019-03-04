@@ -1,0 +1,44 @@
+h1 {
+    color: black;
+    width: 50%;
+    margin: 4% auto;
+
+}
+
+body {
+    background: white;
+            
+  }
+
+  header {
+    width: 100vw;
+    text-align: center;
+    background-color: dodgerblue;
+    border-top: 8px solid black;
+    border-bottom: 6px solid black;
+    
+
+  }
+
+  h2 { 
+      
+      
+      
+  }
+
+ header p:first-of-type {
+      margin-top: -50px;
+  }
+
+  p {
+      margin-top: -20px;
+      font-size: 20px;
+  }
+
+  footer {
+      background-color: dodgerblue
+  }
+
+
+
+                
