@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
 
 
@@ -32,4 +33,40 @@ article {
     background-color: rgb(224,222,222)
     
 
+=======
+body {
+
+
+    width: 850px;
+    margin: 0 auto;
+    
+    
+}
+
+
+main {
+
+    margin: 0 auto;
+    text-align: center;
+
+    
+
+}
+section {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+article {
+
+    width: 280px;
+    height: 374px;
+    background-color: rgb(224,222,222)
+    
+
+>>>>>>> 5af3370778720a0f5d643d78fcd3fea44abfb463
 }
