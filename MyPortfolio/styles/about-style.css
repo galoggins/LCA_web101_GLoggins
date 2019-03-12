@@ -25,18 +25,20 @@ main{
 }
 
 h1 {
-    color: black;
+    color: whitesmoke;
     grid-column: 2/3;
     text-align: center;
-    background-color: dodgerblue;
+    background-color: orange;
     margin: 1% auto;
-    border-top: 8px solid dodgerblue;
+    border-top: 8px solid #1940A9;
     border-bottom: 8px solid #1940A9;
     text-align: center;
+
   }
 
   h2 {
       text-align: center;
+      color: white;
   }
   
   .container {
@@ -48,7 +50,25 @@ h1 {
   .box {
       text-align: center;
   }
-                            
+     
+  .ul {
+    text-align: center;
+    list-style-position: inside;
+    color: white;
+  }
+
+ .ol {
+      text-align: center;
+      list-style-position: inside;
+      color: white;
+  }
+  p {
+      color: white;
+  }
+  h3 { color: white;}
+  h4 { color: white;}
+  h5 { color: white;}
+  h6 { color: white;}
                                     
                                                 
                                     
