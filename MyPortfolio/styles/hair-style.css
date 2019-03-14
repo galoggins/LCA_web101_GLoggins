@@ -62,7 +62,7 @@ img {
 
 }
 
-.box-3 {
+#box-3 {
     display: grid;
     grid-area: "box 3";
     grid-column: 1/2;
@@ -72,6 +72,12 @@ img {
     padding-left: 10px;
     padding-right: 10px;
     color: white;
+    .alignleft {
+        float: left;
+    }
+    .alignright {
+        float: right;
+    }
 }
 
 
