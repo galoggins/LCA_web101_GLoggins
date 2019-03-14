@@ -1,0 +1,248 @@
+
+                                            body {
+                                                font-family: Arial, Helvetica, sans-serif;
+                                                background-image: url(https://www.pixelstalk.net/wp-content/uploads/2016/03/Dark-Blue-Background-free-desktop.jpg);
+                                                background-repeat:repeat;
+                                               /* background-size: 100% 100%;
+                                                height :100vh;
+                                                width: 100vw;
+                                                overflow: auto;
+                                                background-color: ivory;*/
+                                              }
+                                              
+                                              .wrapper {
+                                                display: grid;
+                                                grid-template-columns: repeat(3, 1fr);
+                                                grid-template-rows: 10% 30% 50% 10%;
+                                                grid-auto-flow: column;
+                                              
+                                                }
+
+                                              .wrapper {
+                                                grid-gap: 20px;
+                                                
+                                                grid-template-areas: 
+                                                
+                                                "header header header"
+                                                "form video box"
+                                                "form iframe box"
+                                                "footer footer box";
+                                              }
+                                                
+                                               
+                                             .header {
+                                                grid-area: header;
+                                                grid-column: 1/-1;
+                                                grid-row: 1/2;
+                                                background-color: lavender;
+                                                
+              
+                                              }
+
+                                              
+                                              .form-container {
+                                                grid-area: form;
+                                                grid-column: 1/2;
+                                                grid-row: 2/4;
+                                                background-color: purple;
+                                                
+                                              }
+
+                                              .iframe-container {
+                                                grid-area: iframe;
+                                                grid-column: 2/3;
+                                                grid-row: 2/3;
+                                                
+                                                
+                                              }
+  
+                                              .video-container {
+                                               grid-area: video;
+                                               grid-column: 2/3;
+                                               grid-row: 3/4;
+                                               
+  
+                                              }
+  
+                                              #links-container {
+                                                background-color: white;
+                                                display: flex;
+                                                justify-content: right;
+                                                
+                                                
+                                                border: 3px solid red;
+                                                color: white;
+  
+                                               }
+
+                                               .box {
+                                                 grid-area: box;
+                                                 background-color: purple;
+                                                 grid-column: 4/5;
+                                                 grid-row: 2/4;
+                                               }
+
+                                               .footer {
+                                                grid-area: footer;
+                                                grid-column: 1/-1;
+                                                grid-row: 4/5;
+                                                background-color: purple;
+                                                color: white;
+                                                
+                                              }
+
+                                              form {
+                                                margin-left:auto;
+                                                margin-right:auto;
+                                                max-width: 500px;
+                                                max-height: 600px;
+                                                background: lightsteelblue;
+                                                padding: 25px 15px 25px 10px;
+                                                font: 12px Georgia, "Times New Roman", Times, serif;
+                                                color: black;
+                                                text-shadow: 1px 1px 1px #FFF;
+                                                border:2px solid #E4E4E4;
+                                            }
+
+                                          
+                                              
+                                             /* main {
+                                                width: 100%;
+                                                display: grid;*/
+                                               /* grid-template-columns: 33% 34% 33%;
+                                                grid-template-rows: 7% 44% 44% 5%;
+                                                grid-template-areas: 
+                                                  header header header
+                                                  form video links
+                                                  form iframe links
+                                                  footer footer footer; 
+                                              } */
+                                              
+                                            
+                                              
+                                            
+                                              
+                                              
+                                              h1 {
+                                                color: black;
+                                                font-size: 25px;
+                                                padding: 10px 0 10px 40px;
+                                                display: block;
+                                                text-align: center;
+                                                background-color: dodgerblue;
+                                                margin: 1% auto;
+                                                border-top:  8px solid #1940A9;
+                                                border-bottom: 8px solid #1940A9;
+                                              }
+
+                                              h1>span {
+                                                display: block;
+                                                font-size: 11px;
+                                            }
+
+                                            h2 {
+                                              margin: 3% auto;
+                                              font-style: italic;
+                                              color: black;
+                                            }
+
+                                            label {
+                                              display: block;
+                                              margin: 0px;
+                                          }
+
+                                          label>span {
+                                              float: left;
+                                              width: 20%;
+                                              text-align: right;
+                                              padding-right: 10px;
+                                              margin-top: 10px;
+                                              color: black;
+                                          }
+
+                                          input[type="text"], input[type="email"], input[type="location"], textarea, select {
+                                            border: 1px solid #DADADA;
+                                            color: #888;
+                                            height: 30px;
+                                            margin-bottom: 16px;
+                                            margin-right: 6px;
+                                            margin-top: 2px;
+                                            outline: 0 none;
+                                            padding: 3px 3px 3px 5px;
+                                            width: 70%;
+                                            font-size: 12px;
+                                            line-height:15px;
+                                            box-shadow: inset 0px 1px 4px #ECECEC;
+                                            -moz-box-shadow: inset 0px 1px 4px #ECECEC;
+                                            -webkit-box-shadow: inset 0px 1px 4px #ECECEC;
+                                        }
+
+                                        textarea{
+                                            padding: 5px 3px 3px 5px;
+                                        }
+
+                                      
+                                      /*  select {
+                                            background: #FFF url('down-arrow.png') no-repeat right;
+                                            background: #FFF url('down-arrow.png') no-repeat right);
+                                            appearance:none;
+                                            -webkit-appearance:none; 
+                                            -moz-appearance: none;
+                                            text-indent: 0.01px;
+                                            text-overflow: '';
+                                            width: 70%;
+                                            height: 35px;
+                                            line-height: 25px;
+                                        } */
+
+                                        textarea{
+                                            height: 100px;
+                                        }
+                                        .button {
+                                            background: dodgerblue;
+                                            border: none;
+                                            padding: 5px 15px 5px 15px;
+                                            color: #FFF;
+                                            box-shadow: 1px 1px 5px #B6B6B6;
+                                            border-radius: 3px;
+                                            text-shadow: 1px 1px 1px #9E3F3F;
+                                            cursor: pointer;
+                                        }
+
+                                        .button:hover {
+                                            background: slategray;
+                                        }
+                                        .reset {
+                                          background: dodgerblue;
+                                          border: none;
+                                          padding: 5px 15px 5px 15px;
+                                          color: #FFF;
+                                          box-shadow: 1px 1px 5px #B6B6B6;
+                                          border-radius: 3px;
+                                          text-shadow: 1px 1px 1px #9E3F3F;
+                                          cursor: pointer;
+                                      }
+                                      .reset:hover {
+                                          background: slategrey;
+                                      }
+                                              
+                                              
+
+                                            
+
+
+                                           
+                                            
+  
+                                          
+  
+                                              
+  
+  
+  
+  
+ 
+  
+  
+   
+      

@@ -1,0 +1,76 @@
+body {
+background-color: gray;
+
+
+
+
+}
+
+header {
+    grid-area: "header";
+    grid-column: 1/-1;
+    grid-row: 1/2;
+    background-color: rgb(25, 25, 185);
+}
+
+main{
+    height: 50%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+      header header 
+      
+}
+
+h1 {
+    color: whitesmoke;
+    grid-column: 2/3;
+    text-align: center;
+    background-color: orange;
+    margin: 1% auto;
+    border-top: 8px solid #1940A9;
+    border-bottom: 8px solid #1940A9;
+    text-align: center;
+
+  }
+
+  h2 {
+      text-align: center;
+      color: white;
+  }
+  
+  .container {
+      grid-area: "container";
+      grid-template-columns: 2/3;
+      
+  }
+
+  .box {
+      text-align: center;
+  }
+     
+  .ul {
+    text-align: center;
+    list-style-position: inside;
+    color: white;
+  }
+
+ .ol {
+      text-align: center;
+      list-style-position: inside;
+      color: white;
+  }
+  p {
+      color: white;
+  }
+  h3 { color: white;}
+  h4 { color: white;}
+  h5 { color: white;}
+  h6 { color: white;}
+                                    
+                                                
+                                    
+                                        
+                                            

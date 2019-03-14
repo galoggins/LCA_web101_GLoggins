@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(http://backgroundlabs.com/wp-content/uploads/2013/04/black-mosaic-tiles.png);
+    background-repeat:repeat;
+    background-size: 100% 100%;
+    height :100vh;
+    width: 100vw;
+    overflow: auto;
+    background-color: ivory ;
+  }
+
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+  'header header header header header header'
+  'box-1 box-2 box-2 box-2 box-3 box-3'
+  'box-1 footer footer footer footer footer';
+  grid-gap: 20px;
+  
+  
+
+}
+
+.header {
+  grid-area: "header";
+  text-align: center;
+  font-size: 25px;
+  display: block;
+  color: black;
+  border: 3px solid purple;
+  background-color: blueviolet;
+  background-image: url(https://images.all-free-download.com/images/graphicthumb/abstract_smooth_wave_background_vector_grapihic_art_569579.jpg);
+
+}
+
+header h3 {
+  float: left;
+  font-style: italic;
+  font-size: 70px;
+  border: 4px solid black;
+  background: turquoise;
+  margin-right: 5px;
+  margin-top: 15px;
+}
+
+
+.box-1 {
+  grid-area: "box-1";
+  border: 3px solid black;
+  margin-top: 10px;
+  padding: 0 10 0 10;
+  border-radius: 15px;
+  background: lightsteelblue;
+  text-align: center;
+
+
+}
+
+.box-2 {
+  grid-area: "box-2";
+  border: 3px solid black;
+  margin-top: 10px;
+  padding: 0 10 0 10;
+  border-radius: 15px;
+  background: lightsteelblue;
+  text-align: center;
+  
+}
+
+
+.box-3 {
+grid-area: "box-3";
+border: 3px solid black;
+margin-top: 10px;
+padding: 0 10 0 10;
+border-radius: 15px;
+background: lightsteelblue;
+
+
+
+}
+
+form {
+  margin-left:auto;
+  margin-right:auto;
+  max-width: 500px;
+  max-height: 600px;
+  background: lightsteelblue;
+  padding: 25px 15px 25px 10px;
+  font: 12px Georgia, "Times New Roman", Times, serif;
+  color: black;
+  text-shadow: 1px 1px 1px #FFF;
+  border:2px solid #E4E4E4;
+  height: 500px;
+}
+
+.footer {
+  grid-area: "footer";
+  border: 3px solid black;
+  margin-top: 15px;
+  height: 50px;
+  background: turquoise;
+
+
+}
+
+/* Extra Small and up (Portrait Phones) */
+
+/* Small and up (Landscape Phones) */
+@media (max-width: 576px) {
+
+}
+
+/* Medium and up (Tablets) */
+@media (max-width: 768px) {
+
+}
+
+/* Large and up (Desktops) */
+@media (max-width: 992px) {
+
+}
+
+/* Extra Large and up (Wide Screen Desktops) */
+@media (max-width: 1200px) {
+
+}
