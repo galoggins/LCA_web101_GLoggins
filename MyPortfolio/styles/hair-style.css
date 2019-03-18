@@ -4,7 +4,7 @@ body {
 
 }
 
-.header {
+#header {
     display: grid;
     grid-area: "header";
     grid-column: 1/-1;
