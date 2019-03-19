@@ -1,7 +1,8 @@
 
                                             body {
                                               font-family: Arial, Helvetica, sans-serif;
-                                              background-image: url(http://all4desktop.com/data_images/original/4235929-cool-background.jpg);
+                                              background-image: url(https://ak8.picdn.net/shutterstock/videos/1290388/thumb/1.jpg);
+                                
                                               background-repeat:repeat;
                                               background-size: 100% 100%;
                                               height :100vh;
@@ -20,7 +21,7 @@
                                             header {
                                               display: grid;
                                               grid-template-columns: 40% 60%;
-                                              width: 100%;
+                                              /* width: 100%; */
                                             }
                                             
                                             main {
@@ -55,6 +56,7 @@
                                               display: flex;
                                               justify-content: flex-end;
                                               width: 100%;
+                                              
                                             }
                                             
                                             #profile-pic {
@@ -79,6 +81,31 @@
                                               margin: 3% auto;
                                               font-style: oblique;
                                               color: black;
+                                            }
+                                            .heading {
+                                              width: 50%;
+                                              margin: 0 50%;
+                                              font-size: 40px;
+                                            }
+
+                                            @keyframes welcome  {
+                                              0%   {background-color: red;}    // start
+                                              25%  {background-color: yellow;} // 25% through
+                                              50%  {background-color: blue;}   // 50% through
+                                              100% {background-color: green;}  // finished
+
+                                            }
+                                            
+                                            .divwelcome {
+                                              border: 1px solid black;
+                                              animation-name: welcome;
+                                              animation-delay: 2s;
+                                              animation-duration: 4s;
+                                            }
+                                            
+                                            
+                                        
+                            
                                             }
                                             
                                             button {
@@ -166,3 +193,6 @@ body {
     
   
 }
+
+
+  
