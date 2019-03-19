@@ -1,7 +1,7 @@
 
                                             body {
                                               font-family: Arial, Helvetica, sans-serif;
-                                              background-image: url(https://png.pngtree.com/thumb_back/fh260/back_pic/00/15/30/4656e81f6dc57c5.jpg);
+                                              background-image: url(https://ak8.picdn.net/shutterstock/videos/1290388/thumb/1.jpg);
                                               background-repeat:repeat;
                                               background-size: 100% 100%;
                                               height :100vh;
@@ -19,7 +19,7 @@
                                             header {
                                               display: grid;
                                               grid-template-columns: 40% 60%;
-                                              width: 100%;
+                                              /* width: 100%; */
                                             }
                                             
                                             main {
@@ -54,6 +54,7 @@
                                               display: flex;
                                               justify-content: flex-end;
                                               width: 100%;
+                                              
                                             }
                                             
                                             #profile-pic {
@@ -76,6 +77,31 @@
                                               grid-column: 2/3;
                                               margin: 3% auto;
                                               font-style: italic;
+                                            }
+                                            .heading {
+                                              width: 50%;
+                                              margin: 0 50%;
+                                              font-size: 40px;
+                                            }
+
+                                            @keyframes welcome  {
+                                              0%   {background-color: red;}    // start
+                                              25%  {background-color: yellow;} // 25% through
+                                              50%  {background-color: blue;}   // 50% through
+                                              100% {background-color: green;}  // finished
+
+                                            }
+                                            
+                                            .divwelcome {
+                                              border: 1px solid black;
+                                              animation-name: welcome;
+                                              animation-delay: 2s;
+                                              animation-duration: 4s;
+                                            }
+                                            
+                                            
+                                        
+                            
                                             }
                                             
                                             button {
@@ -163,3 +189,6 @@ body {
     
   
 }
+
+
+  
