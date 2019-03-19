@@ -2,12 +2,14 @@
                                             body {
                                               font-family: Arial, Helvetica, sans-serif;
                                               background-image: url(https://ak8.picdn.net/shutterstock/videos/1290388/thumb/1.jpg);
+                                
                                               background-repeat:repeat;
                                               background-size: 100% 100%;
                                               height :100vh;
                                               width: 100vw;
                                               overflow: auto;
                                               background-color: ivory ;
+
                                             }
                                             
                                             .logo {
@@ -31,8 +33,8 @@
                                             
                                             nav > a {
                                               margin: 2% 1% 3%;
-                                              height: 10%;
-                                              width: 15%;
+                                              height: 12%;
+                                              width: 12%;
                                               color:black;
                                               font-family: Arial, Helvetica, sans-serif;
                                               font-size: 20px;
@@ -70,13 +72,15 @@
                                               color: black;
                                               grid-column: 2/3;
                                               margin: 3% auto;
-                                              border-bottom: 3px solid #1940A9;
+                                              border-bottom: 3px solid black;
+                                              font-style: oblique;
                                             }
                                             
                                             h2 {
                                               grid-column: 2/3;
                                               margin: 3% auto;
-                                              font-style: italic;
+                                              font-style: oblique;
+                                              color: black;
                                             }
                                             .heading {
                                               width: 50%;
@@ -112,14 +116,14 @@
                                               font-family: Arial, Helvetica, sans-serif;
                                               font-size: 25px;
                                               border-radius: 10px;
-                                              background: steelblue;
-                                              padding: 10px; 
-                                              padding-top: 10%; 
-                                              padding-bottom: 10%;
+                                              background: transparent;
+                                              padding: 8px; 
+                                              padding-top: 8%; 
+                                              padding-bottom: 8%;
                                               text-align: center;
-                                              color: white;
+                                              color:black;
                                               letter-spacing: 16px;
-                                              font-style: italic;
+                                              font-style: oblique;
                                               border: 3px solid black;
 
                                             }
