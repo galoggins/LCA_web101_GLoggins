@@ -15,8 +15,38 @@
                                             
                                             .logo {
                                               width: 35%;
-                                             
                                               margin: 3% 10%;
+                                              animation: square-to-circle 2s 4s 1 linear alternate;
+                                              
+
+                                            }
+
+                                            @-webkit-keyframes square-to-circle {
+                                              0%  {
+                                                border-radius:50%;
+                                                
+                                                transform:rotate(0deg);
+                                              }
+                                              25%  {
+                                                border-radius:50% 50% 50% 0;
+                                                
+                                                transform:rotate(90deg);
+                                              }
+                                              50%  {
+                                                border-radius:50% 50% 0 0;
+                                                
+                                                transform:rotate(180deg);
+                                              }
+                                              75%  { 
+                                                border-radius:50% 0 0 0;
+                                                
+                                                transform:rotate(270deg);
+                                              }
+                                              100% {  
+                                                border-radius:0 0 0 0;
+                                                
+                                                transform:rotate(360deg);
+                                              }
                                             }
                                             
                                             header {
@@ -36,14 +66,14 @@
                                               margin: 2% 1% 2%;
                                               height: 12%;
                                               width: 12%;
-                                              color: aliceblue; 
+                                              color: black; 
                                               font-family: Arial, Helvetica, sans-serif;
                                               font-size: 22px;
                                               border-radius: 25px;
-                                              background: transparent;
+                                              background: darkturquoise;
                                               padding: 12px; 
                                               text-align: center;
-                                              border: 3px solid lightsteelblue;
+                                              border: 3px solid black;
                                             }
                                             
                                             .has-border {
@@ -66,7 +96,7 @@
                                               border-radius: 50%;
                                               margin: 15% auto;
                                               grid-column: 2/3;
-                                              border: 10px solid black;
+                                              border: 18px double black;
                                             }
                                             
                                             h1 {
@@ -91,37 +121,39 @@
                                               font-size: 40px;
                                             }
 
-                                            @keyframes welcome  {
+                                           /* @keyframes welcome  {
                                               0%   {background-color: red;}   // start
                                               25%  {background-color: yellow;}  // 25% through
                                               50%  {background-color: blue;}    // 50% through
                                               100% {background-color: green;}   // finished
 
-                                            }
+                                            } */
                                             
                                             .divwelcome {
-                                              opacity: 0;
-                                              border: 1px solid black;
-                                              background: yellow;
-                                              height: 100px;
-                                              width: 100px;
-                                              font-size: 25px;
-                                              animation: opacityOn 5s normal forwards;
+                                              
+                                              border: 5px groove black;
+                                              background: darkturquoise;
+                                              height: 60px;
+                                              width: 400px;
+                                              font-size: 35px;
+                                              text-align: center;
+                                              padding-top: 20px;
+                                              position: absolute;
+                                              left: 40%;
                                               animation-name: welcome;
                                               animation-delay: 2s;
-                                              animation-duration: 4s;
+                                              animation-duration: 5s;
+                                              animation-iteration-count: ;
+                                              animation-timing-function: ease-out;
+                                              animation-direction: from start to end;
+                                              animation-fill-mode: both;
                                             }
 
-                                            @keyframes opacityOnAndOff {
-                                              0% {
-                                                  opacity: 0;
+                                            @keyframes welcome {
+                                              to {
+                                                 opacity: 0;
                                               }
-                                              50%{
-                                                opacity: 1;
-                                              }
-                                              100% {
-                                                  opacity: 0;
-                                              }
+                                            
                                           }
                                             
                                             
@@ -145,7 +177,7 @@
                                               color: whitesmoke;
                                               letter-spacing: 16px;
                                               font-style: oblique;
-                                              border: 3px solid black;
+                                              border: 3px ridge black;
 
                                             }
 
@@ -163,6 +195,11 @@ body {
     background-image: none;
    
     background-color: lavender;
+    
+  }
+  button {
+    font-size: 12px;
+    letter-spacing: 16px;
   }
 
 }
@@ -172,7 +209,7 @@ body {
 @media (max-width: 992px) {
   .has-border {
    
-    padding: 10px; 
+    padding: 1em; 
     
     white-space: nowrap;
   }
@@ -210,6 +247,7 @@ body {
   button {
     
     letter-spacing: 10px;
+    font-size: 7px;
   } 
     
   
