@@ -1,0 +1,54 @@
+h1 {
+    font-family: italic;
+    text-align: center;
+    font-size: 45px;
+  }
+
+   #tic-tac-toe-container {
+    height: 650px;
+    width: 700px;
+    text-align: center;
+    position: fixed;
+    left: 32%;
+    
+  }
+  
+  .row {
+      display: table-row;
+      text-align: center;
+    
+  }
+  
+  .grid-box {
+    display: inline;
+    height: 200px;
+    width: 200px;
+    float: left;
+    border: 8px solid purple;
+    display: table-cell;
+  }
+  
+  #reset-button { 
+    height: 50px;
+    width: 210px;
+    border-radius: 5px;
+    background: midnightblue;
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 20px;
+    font-family: italic;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    margin-left: -104.5px;
+  } 
+  
+  .grid-spot:hover {
+    cursor: pointer;
+  }
+  
+  #reset-button:hover {
+    background: #CCCCCC;
+    cursor: pointer;
+  }
