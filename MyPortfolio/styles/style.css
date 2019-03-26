@@ -143,7 +143,7 @@
                                               animation-name: welcome;
                                               animation-delay: 2s;
                                               animation-duration: 5s;
-                                              animation-iteration-count: ;
+                                              animation-iteration-count: 1;
                                               animation-timing-function: ease-out;
                                               animation-direction: from start to end;
                                               animation-fill-mode: both;
