@@ -47,7 +47,7 @@
                                                 
                                                 transform:rotate(360deg);
                                               }
-                                            }
+                                            } 
                                             
                                             header {
                                               display: grid;
@@ -78,10 +78,10 @@
                                             
                                             .has-border {
                                               border-radius: 25px;
-                                              border: 3px solid black;
+                                              border: 6px solid black;
                                               background: none;
                                               padding: 20px; 
-                                            }
+                                            } 
                                             
                                             nav {
                                               display: flex;
@@ -115,11 +115,11 @@
                                               color: black;
                                             }
 
-                                            .heading {
+                                           /* .heading {
                                               width: 30%;
                                               margin: 0 50%;
                                               font-size: 40px;
-                                            }
+                                            } */
 
                                            /* @keyframes welcome  {
                                               0%   {background-color: red;}   // start
