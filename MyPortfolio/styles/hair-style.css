@@ -5,6 +5,7 @@ body {
 }
 
 .header {
+<<<<<<< Updated upstream
     
 
   
@@ -43,6 +44,8 @@ body {
     border: 3px solid blueviolet;
     background-color: gray;
     grid-gap: 20px;
+=======
+>>>>>>> Stashed changes
     display: grid;
     grid-area: "header";
     grid-column: 1/-1;
@@ -61,6 +64,7 @@ body {
     width: 700px;
     background-color: grey;
     word-wrap: break-word;
+<<<<<<< Updated upstream
   
 }
 h1 {
@@ -88,6 +92,30 @@ h1 {
     color: white;
     
 
+=======
+
+  
+}
+
+img { 
+    float: right;
+    vertical-align: text-top;
+    
+    
+}
+
+.container {
+    text-align: center;
+    font-size: 30px;
+    border: 3px solid blueviolet;
+    background-color: gray;
+    grid-gap: 20px;
+    color: yellow;
+}
+.h1 {
+    border: 2px solid black;
+    background-color: purple;
+>>>>>>> Stashed changes
 }
 
 .box-2 {
@@ -105,7 +133,11 @@ h1 {
 
 }
 
+<<<<<<< Updated upstream
 #box-3 {
+=======
+.box-3 {
+>>>>>>> Stashed changes
     display: grid;
     grid-area: "box 3";
     grid-column: 1/2;
@@ -115,6 +147,7 @@ h1 {
     padding-left: 10px;
     padding-right: 10px;
     color: white;
+<<<<<<< Updated upstream
     .alignleft {
         float: left;
     }
@@ -146,6 +179,8 @@ h1 {
 /* Extra Large and up (Wide Screen Desktops) */
 @media (max-width: 1200px) {
 
+=======
+>>>>>>> Stashed changes
 }
 
 
