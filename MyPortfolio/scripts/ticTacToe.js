@@ -1,16 +1,15 @@
-var gameMarker = "x";
-
-function changeMarkerToX(){
-    gameMarker= "x";
-    //console.log("The X button was clicked");
-
+var gameMarker = "X";
+function changeMarkerToX(){ 
+gameMarker = "X";
+console.log("The X button was clicked");
 }
 
-function changeMarkerToO(){
-    gameMarker="O";
-    //console.log("The O button was clicked");
-
+function changeMarkerToO(){ 
+gameMarker = "O";
+console.log("The O button was clicked");
 }
 
-var box= document.getElementById(div id);
-box.innerHTML=gameMarker;
+function placeMark(divId){
+var box = document.getElementById(divId);
+box.innerHTML = gameMarker;
+}
