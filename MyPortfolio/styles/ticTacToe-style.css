@@ -5,73 +5,14 @@
 }
 
 body {
-  background: darkturquoise;
+  background: turquoise;
 
 }
 
 h1 {
   text-align: center;
 }
-
 #game-board {
-  width: 300px;
-  height: 300px;
-  max-height: 300px;
-  max-width: 300px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  margin-left: calc(50vw-150vw);
-  justify-content: center;
-  text-align: center;
-  font-size: 80px;
-  
-
-}
-
-#command {
-  margin-top: 50px;
-  width: 300px;
-  height: 150px;
-  max-height: 150px;
-  max-width: 300px;
-
-  
- margin-left: calc(50vw-150vw);
- text-align: center;
-}
-
-.piece-block {
-  width: 100px;
-  height: 100px;
-  border: 1px solid black;
-}
- 
-button {
-  width: 100px;
-  height: 50px;
-  border-radius: 25px;
-  font-size: 24px;
-  font-weight: bolder;
-}
-
-
-
-/*h1 {
-    font-family: italic;
-    text-align: center;
-    font-size: 45px;
-  }
-
-  body {
-    background: darkturquoise;
-  
-  }
-
-  h1 {
-    text-align: center;
-  }
-  
-  #game-board {
   width:300px;
   height:300px;
   max-height:300px;
@@ -83,17 +24,69 @@ button {
   text-align: center;
   font-size: 80px;
   
-  }
+  } 
+
+/*#game-board {
+  width: 300px;
+  height: 300px;
+  max-height: 300px;
+  max-width: 300px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-left:calc(50vw-150px);
+  justify-content: center;
+  text-align: center;
+  font-size: 80px;
+  
   
 
-  .piece-block {
+}*/
+
+#command {
+  margin-top: 50px;
+  width: 300px;
+  height: 150px;
+  max-height: 150px;
+  max-width: 150px;
+  margin-left:calc(50vw-150px);
+  text-align: center;
+}
+
+.piece-block {
+  width: 100px;
+  height: 100px;
+  border: 3px solid purple;
+}
+ 
+button {
+  width: 100px;
+  height: 50px;
+  border-radius: 25px;
+  font-size: 24px;
+  font-weight: bolder;
+  text-align: center;
+}
+
+button:hover {
+  background: dodgerblue;
+  border: 2px solid gray;
+
+}
+
+  
+  
+  
+ 
+  
+
+ /* .piece-block {
   width:100px;
   height:100px;
   border:solid 2px purple;
-  }
+  } */
   
   
-  #command{
+ /* #command{
   margin-top:50px;
   width:300px;
   height:150px;
@@ -101,9 +94,9 @@ button {
   min-height:150px;
   margin-left:calc(50vw - 150px);
   text-align:center;
-  }
+  }*/
   
-  button{
+ /* button{
   width:100px;
   height:50px;
   border-radius:15px;
@@ -111,24 +104,16 @@ button {
   font-weight:bolder;
   text-align: center;
   
-  }
+  }*/
 
-  button:hover {
-    background: dodgerblue;
-    border: 2px solid gray;
 
-    #square1:hover {
-      background: tomato;
-      opacity: 0.4;
-      border: 1px solid black;
-      border-radius: 4px;
 
 
 
 
 
   
-  #reset-button { 
+ /* #reset-button { 
     height: 50px;
     width: 210px;
     border-radius: 5px;
