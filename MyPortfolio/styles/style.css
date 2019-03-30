@@ -212,7 +212,7 @@ body {
   }
 
    button {
-    font-size: 12px;
+    font-size: 18px;
     letter-spacing: 16px;
   }
 
@@ -241,19 +241,21 @@ button {
   font-size: 18px;
   letter-spacing: 16px;
 }
+
 }
 
 
  /* Medium and up (Tablets) */
 @media (max-width: 768px) {
  h2 {font-size: 1em;
-
-
- }
- button {
-   font-size: 12px;
-   letter-spacing: 16px;
- }
+}
+ 
+button {
+  letter-spacing: 10px;
+   font-size: 10px;
+   width: 80%;
+   padding-bottom: 25px;
+ } 
   
  
 }
@@ -264,14 +266,14 @@ button {
   
   button {
    letter-spacing: 10px;
-    font-size: 12px;
+    font-size: 10px;
     width: 80%;
     padding-bottom: 25px;
   } 
 
   nav > a {
     margin: 2% 1% 2%;
-    height: 12%;
+    height: 8%;
     width: 12%;
     color: black; 
     font-family: Arial, Helvetica, sans-serif;
