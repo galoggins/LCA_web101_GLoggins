@@ -117,6 +117,18 @@ form {
 /* Small and up (Landscape Phones) */
 @media (max-width: 576px) {
 
+  container {
+  display: grid;
+  grid-template-areas:
+  'header'
+  'box-1'
+  'box-2'
+  'box-3'
+  'footer':
+  grid-gap: 20px;
+  
+}
+
 }
 
 /* Medium and up (Tablets) */
