@@ -66,7 +66,7 @@
       justify-self: end;
       align-self: start;
       background-color:white;
-      border: 3px solid red;
+      border: 3px inset red;
       margin-top: 20px;
       margin-bottom: 10px;
       height: 680px;
@@ -108,10 +108,10 @@
                                     
      h1 {
       color: black;
-     /* font-size: 40px;*/
-      font: 44px Georgia, "Times New Roman", Times, serif;
+      font-size: 45px;
+      font-family: 'Oleo Script Swash Caps', cursive;
       padding: 10px 0 10px 10px;
-      text-shadow: 1px 1px 1px yellow;
+      text-shadow: 1px 1px 1px white;
      /* display: block; */
       text-align: center;
       background-color: dodgerblue;
@@ -122,10 +122,10 @@
      
      .logo {
   
-      font-style: Georgia, "Times New Roman", Times, serif;
+      font-family: 'Rye', cursive;;
       font-size: 70px;
       border: 7px outset black;
-      background: turquoise;
+      background: transparent;
       margin-right: 5px;
       margin-top: 5px;
       position: absolute;
@@ -212,33 +212,6 @@
      }
       
                                     
-
-                                          
-                                              
-                                             /* main {
-                                                width: 100%;
-                                                display: grid;*/
-                                               /* grid-template-columns: 33% 34% 33%;
-                                                grid-template-rows: 7% 44% 44% 5%;
-                                                grid-template-areas: 
-                                                  header header header
-                                                  form video links
-                                                  form iframe links
-                                                  footer footer footer; 
-                                              } */
-                                              
-                                            
-                                              
-                                            
-                                              
-                                              
-                                             
-
-                                      
-                            
-
-                                      
-                                        
 
  /* Extra Small and up (Portrait Phones) */
 
