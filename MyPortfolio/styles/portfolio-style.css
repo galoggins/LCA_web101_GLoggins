@@ -193,6 +193,12 @@
       cursor: pointer;
      }
 
+     .wrapper {
+      background-color: rgb(65, 47, 25);
+      grid-area: wrapper;
+      display: grid;
+     }
+
     .button:hover {
       background: red;
       
