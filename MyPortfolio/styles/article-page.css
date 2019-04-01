@@ -15,19 +15,12 @@ body {
     grid-template-areas: 
     
    'header header header'
-   'box1 box2 box3'
-   'box1 box2 box3';
+   'article article article'
+   'article article article';
 
   }
 
- /* .home header.masthead.masthead-inline {
-    position: absolute;
-    width: 100%;
-}
-
-.home .x-navbar .desktop .x-nav > li > a {
-    color: #fff;
-}*/
+ 
 
   h1 {
       
@@ -59,6 +52,7 @@ body {
     background: rgba(0, 0, 0, 0.1);
     padding: 0px 20px 10px;
     
+
     
   }
 
