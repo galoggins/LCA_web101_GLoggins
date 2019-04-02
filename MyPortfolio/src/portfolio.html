@@ -75,34 +75,44 @@
      </div>
 
      <div class="container" id="links-container">
-            <a href="dashboard.html">Dashboard</a>
-            <a href="nasa.html">nasalanding page</a>
-            <a href="hair.html">hairlanding page</a>
-            <a href="ticTacToe.html">ticTacToe</a>
-            <a href="BaconIpsum.html">BaconIpsum</a>
-            <img src="../images/Screenshot (4).png" alt="Screenshot of dashboard" width="100" height="100">
-            <img src="../images/Screenshot (5).png" alt="Screenshot of nasa-page" width="100" height="100">
-            <img src="../images/Screenshot (6).png" alt="Screenshot of hair-page" width="100" height="100">
-            <img src="../images/Screenshot (7).png" alt="Screenshot of ticTacToe" width="100" height="100">
-            <img src="../images/Screenshot (8).png" alt="Screenshot of BaconIpsum" width="100" height="100">
-      </div>
-
-     
-
-    
-      
-
-    
-
-  
-   <footer class="container" id="footer">
-     <p></p>
-
-   </footer>
-
- 
-    
+            <a href="dashboard.html"><img src="../images/Screenshot (4).png" alt="Screenshot of dashboard" width="100" height="100"></a>
+            <a href="nasa.html"><img src="../images/Screenshot (5).png" alt="Screenshot of nasa-page" width="100" height="100"></a>
+            <a href="hair.html"><img src="../images/Screenshot (6).png" alt="Screenshot of hair-page" width="100" height="100"></a>
+            <a href="ticTacToe.html"><img src="../images/Screenshot (7).png" alt="Screenshot of ticTacToe" width="100" height="100"></a>
+            <a href="BaconIpsum.html"><img src="../images/Screenshot (8).png" alt="Screenshot of BaconIpsum" width="100" height="100"></a>
         
+
+            <a href="dashboard.html"><img src="../images/Screenshot (4).png" alt="Screenshot of dashboard" width="100" height="100"></a>
+            <a href="nasa.html"><img src="../images/Screenshot (5).png" alt="Screenshot of nasa-page" width="100" height="100"></a>
+            <a href="hair.html"><img src="../images/Screenshot (6).png" alt="Screenshot of hair-page" width="100" height="100"></a>
+            <a href="ticTacToe.html"><img src="../images/Screenshot (7).png" alt="Screenshot of ticTacToe" width="100" height="100"></a>
+            <a href="BaconIpsum.html"><img src="../images/Screenshot (8).png" alt="Screenshot of BaconIpsum" width="100" height="100"></a>
+            <button onclick="myLocation()">Click to get Location</button>
+            <p id="myloc"></p>
+
+       </div>
+
+        <script type="text/javascript">
+            var loc = document.getElementById('myloc');
+
+            function myLocation() {
+              if(navigator.geolocation){
+                navigator.geolocation.getCurrentPosition(showPosition);
+
+
+              }else{
+
+                loc.innerHTML = "Location Tracking not possible.";
+
+              }
+            }
+                function showPosition(position){
+                  loc.innerHTML = "Longitude:" + position.coords.longitude + "<br> Latitude: " + position.coords.latitude + "<br";
+                }
+        
+      </script>
+
+
 </body>
 </html> 
  
