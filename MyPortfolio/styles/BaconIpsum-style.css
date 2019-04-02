@@ -171,10 +171,16 @@ article {
 }
   
 
-@media (min-width: 576px) {
+@media (max-width: 576px) {
 
-   /* h1 {
-        font-size: 25%; */
+    h1 {
+        font-size: 25%; 
+        grid-template-areas: 
+         'header'
+         'nav'
+         'bacon1'
+         'bacon2'
+         'bacon3';
     }
 }
 
