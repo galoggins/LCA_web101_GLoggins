@@ -6,36 +6,114 @@
     <title>My Dashboard</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../styles/dashboard-style.css">
+    <link rel="stylesheet" href="../styles/animate.css">
+    <link href="https://fonts.googleapis.com/css?family=Rye" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Asset" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <script src="main.js"></script>
 </head>
+
 <body>
-        <div class="container">
-                <header>The Power Of "Yet"!!</header>
-                <nav>
-                  <ul>
-                    <li><a href="#">nav 1</a></li>
-                    <li><a href="#">nav 2</a></li>
-                    <li><a href="#">nav 3</a></li>
-                  </ul>
-                </nav>
+           <div class="container">
+            <header>
+                    <h1 class="animated bounceInLeft delay-1s">The Power Of "Yet"!!</h1>
+
+                  <span class="logo">GL</span>
+                  <nav class="animated fadeInRightBig delay-1s">
+                    
+                         <a href="../index.html"><i class="fas fa-home" style="font-size:30px;"></i></a>
+                        
+                  </nav>
+             </header>
+                
                 <main>
                   
-                  <h1></h1>
-                  <iframe src="http://free.timeanddate.com/clock/i6ngv56o/n544/fs18/fcfff/tc22d/ftbi/bls0/brs0/bts4/btc00b/tt0/tw1/tm1" frameborder="0" width="307" height="48"></iframe>
+                 <iframe src="http://free.timeanddate.com/clock/i6ngv56o/n544/fs18/fcfff/tc22d/ftbi/bls0/brs0/bts4/btc00b/tt0/tw1/tm1" frameborder="0" width="307" height="58"></iframe>
 
+                 <h2>Hello Gregg!</h2><br/>
+                 <h3>Let's Get That Project Started Today...</h3>
+              
                 </main>
 
             
                 <aside>
-                  <p>Why do we use it?
-                      It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+                  
+                  <button class="button2" onclick="myLocation()">Click to get Location</button>
+            <p id="myloc"></p>
 
-                  </p>
+              <img src="https://www.onlinestores.com/media/catalog/product/cache/5/image/9df78eab33525d08d6e5fb8d27136e95/f/l/flgdgdn1000037915_-00_bereavement-garden-flag-serenity-prayer.jpg" width="450" height="400">
                   
                </aside>
+
+               <div class=.box>
+                 <h4>My New Projects</h4>
+            <a href="dashboard.html"><img src="../images/Screenshot (4).png" alt="Screenshot of dashboard" width="150" height="150"></a>
+            
+           <a href="hair.html"><img src="../images/Screenshot (5).png" alt="Screenshot of hair-page" width="150" height="150"></a>
+                     
+               
+                     
+           <a href="BaconIpsum.html"><img src="../images/Screenshot (7).png" alt="Screenshot of ticTacToe" width="150" height="150"></a>
+               
+           <a href="about-page.html"><img src="../images/Screenshot (9).png" alt="Screenshot of About-Me" width="150" height="150"></a>
+         
+           <a href="contact-page.html"><img src="../images/Screenshot (10).png" alt="Screenshot of Contact-Page" width="150" height="150"></a>
+         
+            <a href="resume.html"><img src="../images/Screenshot (11).png" alt="Screenshot of Resume" width="150" height="150"></a>
+                     
+               
+         
+                
+                    
+             </div>
                
                <div class="wrapper">
-                 <img src="../images/wireframe 1.PNG" alt="wireframe 1" width="490" height="300">
+                  <div class="container">
+                      <div class="my-form">
+                        <form class="todo-form">
+                          <span class="icn-input"></span>
+                          <input type="text" class="todo-input" placeholder="What will you do?">
+                          <button type="submit" class="todo-add not-focused">Add<span></span></button>
+                        </form>
+                      </div>
+                      <div class="my-list" id="my-list">
+                        <ul class="todo-list">
+                          <li class="li-item ui-state-default">
+                            <span class="dragable"></span>
+                            <span class="checkbox"></span>
+                            <span class="text">Task 1</span>
+                            <span class="remove"></span>
+                          </li>
+                          <li class="li-item ui-state-default">
+                            <span class="dragable"></span>
+                            <span class="checkbox"></span>
+                            <span class="text">Task 2</span>
+                            <span class="remove"></span>
+                          </li>
+                          <li class="li-item ui-state-default">
+                            <span class="dragable"></span>
+                            <span class="checkbox"></span>
+                            <span class="text">Task 3</span>
+                            <span class="remove"></span>
+                          </li>
+                        </ul>
+                        <ul class="clone-list" id="clone-list">
+                        </ul>
+                      </div>
+                      <footer>
+                        <div class="my-func">
+                          <button id="delete">
+                            <span class="d-parts1"></span>
+                            <span class="d-parts2"></span>
+                            <span class="d-parts3"></span>
+                          </button>
+                      </div> 
+                      </footer>
+                    </div>
+                    
                </div>
                
             
@@ -85,6 +163,28 @@
               </div>
 
               <footer> "no date."Steffan Thorsen, "Time and Date, AS" n.d., https://www.timeanddate.com/clocks/free.html (accessed February 26,2019). </footer>
+
+              
+        <script type="text/javascript">
+          var loc = document.getElementById('myloc');
+
+          function myLocation() {
+            if(navigator.geolocation){
+              navigator.geolocation.getCurrentPosition(showPosition);
+
+
+            }else{
+
+              loc.innerHTML = "Location Tracking not possible.";
+
+            }
+          }
+              function showPosition(position){
+                loc.innerHTML = "Longitude:" + position.coords.longitude + "<br> Latitude: " + position.coords.latitude + "<br";
+              }
+      
+    </script>
+
 
               
     

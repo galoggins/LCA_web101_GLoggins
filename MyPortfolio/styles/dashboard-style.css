@@ -1,15 +1,54 @@
+body {
+  
 
+}
 
 
  header {
   background-color: dodgerblue;
   grid-area: header;
   border: 4px solid black;
+
+  
+
+} 
+
+h1 {
+  font-family: 'Rye', cursive;
+  font-size: 50px;
   text-align: center;
-  font-size: 40px;
-  padding-top: 10px;
-  padding-bottom: 30px;
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+  letter-spacing: 11px;
+  
 }
+h2 {
+  font-family: 'Ubuntu', sans-serif;
+  margin-left: 50px;
+  color: white;
+  letter-spacing: 10px;
+  font-size: 40px;
+}
+
+h3 {
+  font-family: 'Ubuntu', sans-serif;
+  margin-left: 50px;
+  color: white;
+  letter-spacing: 10px;
+  font-size: 35px;
+
+}
+
+h4 {
+  font-family: 'Asset', cursive;
+  font-size: 22px;
+  border: 2px solid red;
+  padding: 15px;
+  margin-top: 3px;
+  background: plum;
+
+}
+
 
 main {
   background-color: grey;
@@ -17,23 +56,68 @@ main {
   border: 9px solid navy;
   background-image: url('https://camo.githubusercontent.com/965081c5e22aa30088da73d0f73f2e97db5ae485/68747470733a2f2f6c68332e676f6f676c6575736572636f6e74656e742e636f6d2f2d62723054634d66334f56632f556c4d666f4370544b70492f41414141414141414748552f516f326435344b6c4472632f73313932302d77313932302d68313038302d632f474d5a7a4777582e6a7067')
   
+  
 }
-/* 1 */
 
-nav {
-  background-color: lightsalmon;
-  grid-area: nav;
+.logo {
+    
+  font-family: 'Rye', cursive;
+  font-size: 70px;
+  border: 5px outset black;
+  background: transparent;
+  margin-right: 5px;
+  margin-top: 10px;
+  margin-bottom: 1px;
+  margin-left: 10px;
+  position: absolute;
+  left: 3px;
+  top: 5px;
+  z-index: 1;
+  
+  
 
-}
+  }
+
+  nav {
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    top: 29px;
+    right: 80px;
+    border: 5px double black;
+    padding: 15px;
+  
+
+ }
+
+ .button2 {
+  background: dodgerblue;
+  border: none;
+  padding: 5px 15px 5px 15px;
+  color: #FFF;
+  box-shadow: 1px 1px 5px #B6B6B6;
+  border-radius: 3px;
+  text-shadow: 1px 1px 1px #9E3F3F;
+  cursor: pointer;
+  position: absolute;
+  right: 30px;
+  top: 153px;
+
+ }
+
 
 aside {
   background-color: rgb(112, 172, 112);
   grid-area: aside;
-  display: grid;
+  
+
 }
   
+.box {
+  border: 4px solid maroon;
+}
  .banner {
-  background-color: lavender;
+  background-color: slategray;
   grid-area: banner;
  }
 
@@ -59,12 +143,26 @@ footer {
   grid-template-columns: 2fr 3fr 2fr; 
   grid-template-rows: 7% 53% 35% 5%;
   grid-gap: 16px;
+  grid-template-columns: 2fr 3fr 2fr;
+  grid-template-rows: 10% 40% 40% 10%;
+  
+  grid-template-areas: 
+    "header header  header"
+    "box    main    aside"
+    "wrapper main  banner"
+    "footer footer  banner";
+
+}
+
+
+
+  
   
 
 
   grid-template-areas: 
     "header"
-    "nav"
+    "box"
     "wrapper"
     "main"
     "aside"
@@ -84,9 +182,9 @@ footer {
   grid-row-gap: 16px;
   or just use grid-gap for both
   */
-  grid-gap: 16px;
 
-}
+
+} 
 
 /*grid-calculator*/
 #calculator-buttons {
