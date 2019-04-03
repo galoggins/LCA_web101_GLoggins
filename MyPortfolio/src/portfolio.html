@@ -9,6 +9,9 @@
   <link rel="stylesheet" href="../styles/animate.css">
   <link href="https://fonts.googleapis.com/css?family=Rye" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Asset" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <title>My Portfolio</title>
 </head>
 
@@ -17,29 +20,34 @@
 <header class="container" id="header">
   <h1 class="animated bounceInLeft delay-1s">Gregg's Portfolio</h1>
   <span class="logo">GL</span>
+  <nav class="animated fadeInRightBig delay-1s">
+    
+         <a href="../index.html"><i class="fas fa-home" style="font-size:30px;"></i></a>
+        
+  </nav>
 
 </header>
 
-    <div class="container" id="form-container">
+  <div class="container" id="form-container">
             
-     <form action="" method="post" class="STYLE-NAME">
+    <form action="" method="post" class="STYLE-NAME">
        <h2><strong>Contact Form</strong></h2>
        <span>Please Fill In All The Information.</span>
        <hr/>
       
 
-       <label>
-         <span>Your Name:</span>
-         <input id="name" type="text"
-         name="name" placeholder="Your Full Name"/>
-       </label>
+     <label>
+       <span>Your Name:</span>
+       <input id="name" type="text"
+       name="name" placeholder="Your Full Name"/>
+     </label>
 
-       <label>
-         <span>Email:</span>
-         <input id="email" type="text" name="name" placeholder="Email"/>
-       </label>
+     <label>
+       <span>Email:</span>
+       <input id="email" type="text" name="name" placeholder="Email"/>
+     </label>
 
-       <label>
+      <label>
          <span>Location:</span>
          <input id="location" type="text" name="name" placeholder="Location"/>
        </label>
@@ -53,18 +61,20 @@
           <input type="button" class="button" value="Submit"/>
           <input type="button" class="reset" value="Reset"/>
        </label>
+
        
-    
-     </form>
+   </form>
    
    </div>
 
-     <div class="container" id="iframe-container">
+   <div class="container" id="iframe-container">
        <iframe width="500" height="300" src="https://www.youtube.com/embed/2gyxeXW_2T8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-     </div>
+   </div>
 
-     <div class="container" id="video-container">
+   
+
+   <div class="container" id="video-container">
          <video controls width="500" height="300"
           source src="/videos/sunset-video.mp4"
          type="video/mp4">
@@ -72,25 +82,33 @@
          <p>Your browser doesn't support HTML5 video. Here is
          a <a href="https://www.myVideo.com">link to the video</a> instead.</p>
         </video>
-     </div>
+   </div>
 
-     <div class="container" id="links-container">
-            <a href="dashboard.html"><img src="../images/Screenshot (4).png" alt="Screenshot of dashboard" width="100" height="100"></a>
-            <a href="nasa.html"><img src="../images/Screenshot (5).png" alt="Screenshot of nasa-page" width="100" height="100"></a>
-            <a href="hair.html"><img src="../images/Screenshot (6).png" alt="Screenshot of hair-page" width="100" height="100"></a>
-            <a href="ticTacToe.html"><img src="../images/Screenshot (7).png" alt="Screenshot of ticTacToe" width="100" height="100"></a>
-            <a href="BaconIpsum.html"><img src="../images/Screenshot (8).png" alt="Screenshot of BaconIpsum" width="100" height="100"></a>
-        
-
-            <a href="dashboard.html"><img src="../images/Screenshot (4).png" alt="Screenshot of dashboard" width="100" height="100"></a>
-            <a href="nasa.html"><img src="../images/Screenshot (5).png" alt="Screenshot of nasa-page" width="100" height="100"></a>
-            <a href="hair.html"><img src="../images/Screenshot (6).png" alt="Screenshot of hair-page" width="100" height="100"></a>
-            <a href="ticTacToe.html"><img src="../images/Screenshot (7).png" alt="Screenshot of ticTacToe" width="100" height="100"></a>
-            <a href="BaconIpsum.html"><img src="../images/Screenshot (8).png" alt="Screenshot of BaconIpsum" width="100" height="100"></a>
-            <button onclick="myLocation()">Click to get Location</button>
+   <div class="container" id="links-container">
+          <div>
+            <h3>My Projects</h3>
+            <button class="button2" onclick="myLocation()">Click to get Location</button>
             <p id="myloc"></p>
+            
+   </div>
+      <a href="dashboard.html"><img src="../images/Screenshot (4).png" alt="Screenshot of dashboard" width="150" height="150"></a>
+            
+      <a href="hair.html"><img src="../images/Screenshot (5).png" alt="Screenshot of hair-page" width="150" height="150"></a>
+            
+      <a href="ticTacToe.html"><img src="../images/Screenshot (6).png" alt="Screenshot of hair-page" width="150" height="150"></a>
+            
+      <a href="BaconIpsum.html"><img src="../images/Screenshot (7).png" alt="Screenshot of ticTacToe" width="150" height="150"></a>
+            
+      <a href="nasa.html"><img src="../images/Screenshot (8).png" alt="Screenshot of BaconIpsum" width="150" height="150"></a>
 
-       </div>
+      <a href="about-page.html"><img src="../images/Screenshot (9).png" alt="Screenshot of About-Me" width="150" height="150"></a>
+
+      <a href="contact-page.html"><img src="../images/Screenshot (10).png" alt="Screenshot of Contact-Page" width="150" height="150"></a>
+
+      <a href="resume.html"><img src="../images/Screenshot (11).png" alt="Screenshot of Resume" width="150" height="150"></a>
+       
+           
+    </div>
 
         <script type="text/javascript">
             var loc = document.getElementById('myloc');
