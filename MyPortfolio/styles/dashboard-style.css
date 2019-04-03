@@ -78,6 +78,36 @@ main {
 
   }
 
+  .divwelcome {
+                                              
+   /* border: 10px groove black;
+    background: yellow;*/
+    color: whitesmoke;
+    height: 60px;
+    width: 400px;
+    font-size: 45px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 100px;
+    position: absolute;
+    left: 40%;
+    animation-name: welcome;
+    animation-delay: 2s;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    animation-direction: from start to end;
+    animation-fill-mode: both;
+    margin-top: 200px;
+  }
+
+  @keyframes welcome {
+    to {
+       opacity: 0;
+    }
+  
+}
+
   nav {
     display: flex;
     justify-content: flex-end;
