@@ -1,3 +1,9 @@
+body {
+  background: white;
+          
+}
+
+
 h1 {
     color: black;
     width: 50%;
@@ -5,9 +11,11 @@ h1 {
 
 }
 
-body {
-    background: white;
-            
+
+ h2 { 
+      
+      
+      
   }
 
   header {
@@ -32,11 +40,7 @@ body {
 
  }
 
-  h2 { 
-      
-      
-      
-  }
+  
 
  header p:first-of-type {
       margin-top: -50px;
