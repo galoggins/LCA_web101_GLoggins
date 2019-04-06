@@ -12,13 +12,14 @@
     <link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Asset" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <script src="main.js"></script>
 </head>
 
 <body>
            <div class="container">
-            <header>
+            <header class="header">
                 <div class="divwelcome"><strong>Welcome To My Dashboard</strong></div>
 
                     <h1 class="animated bounceInLeft delay-1s">The Power Of "Yet"!!</h1>
@@ -31,26 +32,26 @@
                   </nav>
              </header>
                 
-                <main>
+                <main class="main">
                   
-                 <iframe src="http://free.timeanddate.com/clock/i6ngv56o/n544/fs18/fcfff/tc22d/ftbi/bls0/brs0/bts4/btc00b/tt0/tw1/tm1" frameborder="0" width="307" height="58"></iframe>
+                 <iframe src="http://free.timeanddate.com/clock/i6ngv56o/n544/fs18/fcfff/tc22d/ftbi/bls0/brs0/bts4/btc00b/tt0/tw1/tm1" frameborder="0" width="307" height="88"></iframe>
 
                  <h2>Hello Gregg!</h2><br/>
-                 <h3>Let's Get That Project Started Today...</h3>
+                 <h3>It does not matter how slowly you go as long as you do not stop.<br/> --Confucius</h3>
               
                 </main>
 
             
-                <aside>
+                <aside class="aside">
                   
-                  <button class="button2" onclick="myLocation()">Click to get Location</button>
-            <p id="myloc"></p>
-
-              <img src="https://www.onlinestores.com/media/catalog/product/cache/5/image/9df78eab33525d08d6e5fb8d27136e95/f/l/flgdgdn1000037915_-00_bereavement-garden-flag-serenity-prayer.jpg" width="450" height="400">
+                  <button class="button3" onclick="myLocation()">Click to get Location</button>
+                  <p id="myloc"></p>
+                  <p class="h7">Serenity Prayer</p>
+                  <img src="https://www.onlinestores.com/media/catalog/product/cache/5/image/9df78eab33525d08d6e5fb8d27136e95/f/l/flgdgdn1000037915_-00_bereavement-garden-flag-serenity-prayer.jpg" width="450" height="400">
                   
-               </aside>
+                </aside>
 
-               <div class=.box>
+               <div class="box">
                  <h4>Dashboard Projects</h4>
             <a href="dashboard.html"><img src="../images/Screenshot (4).png" alt="Screenshot of dashboard" width="150" height="150"></a>
             
@@ -66,66 +67,39 @@
          
             <a href="resume.html"><img src="../images/Screenshot (11).png" alt="Screenshot of Resume" width="150" height="150"></a>
                      
-               
-         
-                
-                    
              </div>
                
                <div class="wrapper">
-                  <div class="container">
-                      <div class="my-form">
-                        <form class="todo-form">
-                          <span class="icn-input"></span>
-                          <input type="text" class="todo-input" placeholder="What will you do?">
-                          <button type="submit" class="todo-add not-focused">Add<span></span></button>
-                        </form>
-                      </div>
-                      <div class="my-list" id="my-list">
-                        <ul class="todo-list">
-                          <li class="li-item ui-state-default">
-                            <span class="dragable"></span>
-                            <span class="checkbox"></span>
-                            <span class="text">Task 1</span>
-                            <span class="remove"></span>
-                          </li>
-                          <li class="li-item ui-state-default">
-                            <span class="dragable"></span>
-                            <span class="checkbox"></span>
-                            <span class="text">Task 2</span>
-                            <span class="remove"></span>
-                          </li>
-                          <li class="li-item ui-state-default">
-                            <span class="dragable"></span>
-                            <span class="checkbox"></span>
-                            <span class="text">Task 3</span>
-                            <span class="remove"></span>
-                          </li>
-                        </ul>
-                        <ul class="clone-list" id="clone-list">
-                        </ul>
-                      </div>
-                      <footer>
-                        <div class="my-func">
-                          <button id="delete">
-                            <span class="d-parts1"></span>
-                            <span class="d-parts2"></span>
-                            <span class="d-parts3"></span>
-                          </button>
-                      </div> 
-                      </footer>
-                    </div>
+                 <div class="container2">
+                  
+                  <h5>My TODO LIST</h5>
+                        <h6>Yet TODO</h6>
+                        <p>
+                          <input id="new-task" type="text"><button>Add</button>
+                        </p>
                     
-               </div>
+                        <h6>Todo</h6>
+                        <ul id="incomplete-tasks">
+                          <li><input type="checkbox"><label>Do Coding Homework</label><input type="text"><button class="edit">Edit</button><button class="delete">Delete</button></li>
+                          <li><input type="checkbox"><label>Make Wife Happy</label><input type="text" value="Go Shopping"><button class="edit">Edit</button><button class="delete">Delete</button></li>
+                        </ul>
+                    
+                        <h6>Finished Tasks</h6>
+                        <ul id="completed-tasks">
+                          <li><input type="checkbox" checked><label>Walk The Dog</label><input type="text"><button class="edit">Edit</button><button class="delete">Delete</button></li>
+                        </ul>
+
+                        </div>
+                    
+                 </div>
                
             
-
-                 
-             <div class="banner">
+                  <div class="banner">
                     <!-- flex-box-calculator -->
                      <div class="flexbox-container">
                         <div class="flexbox-calculator">
                           <input />
+                          
                             <div class="keys">7</div>
                             <div class="keys">8</div>
                             <div class="keys">9</div>
@@ -143,10 +117,7 @@
                             <div class="keys">+</div>
                             <div class="keys">=</div>
                             
-                            
-                      
-
-                            <section id="anomaly-keys-wrapper">
+                         <section id="anomaly-keys-wrapper">
                                 <section>
                                     <div class="keys">AC</div>
                                     <div class="keys">M-</div>
@@ -161,10 +132,12 @@
                         </div>
                         <!-- flex-box calculator ends -->
                     </div>
-                
+      
               </div>
 
-              <footer> "no date."Steffan Thorsen, "Time and Date, AS" n.d., https://www.timeanddate.com/clocks/free.html (accessed February 26,2019). </footer>
+              <footer class="footer"> "no date."Steffan Thorsen, "Time and Date, AS" n.d., https://www.timeanddate.com/clocks/free.html (accessed February 26,2019).
+                
+              </footer>
 
               
         <script type="text/javascript">
@@ -185,7 +158,7 @@
                 loc.innerHTML = "Longitude:" + position.coords.longitude + "<br> Latitude: " + position.coords.latitude + "<br";
               }
       
-    </script>
+         </script>
 
 
               
