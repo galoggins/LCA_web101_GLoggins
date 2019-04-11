@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../styles/dashboard-style.css">
     <link rel="stylesheet" href="../styles/animate.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Rye" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
@@ -73,18 +74,18 @@
                  <div class="container2">
                   
                   <h5>My TODO LIST</h5>
-                        <h6>Yet TODO</h6>
+                        <h6>Pending</h6>
                         <p>
                           <input id="new-task" type="text"><button>Add</button>
                         </p>
                     
-                        <h6>Todo</h6>
+                        <h6>In Progress</h6>
                         <ul id="incomplete-tasks">
                           <li><input type="checkbox"><label>Do Coding Homework</label><input type="text"><button class="edit">Edit</button><button class="delete">Delete</button></li>
                           <li><input type="checkbox"><label>Make Wife Happy</label><input type="text" value="Go Shopping"><button class="edit">Edit</button><button class="delete">Delete</button></li>
                         </ul>
                     
-                        <h6>Finished Tasks</h6>
+                        <h6>Completed</h6>
                         <ul id="completed-tasks">
                           <li><input type="checkbox" checked><label>Walk The Dog</label><input type="text"><button class="edit">Edit</button><button class="delete">Delete</button></li>
                         </ul>
@@ -93,47 +94,44 @@
                     
                  </div>
                
-            
+                  <!-- flex-box-calculator -->
+
                   <div class="banner">
-                    <!-- flex-box-calculator -->
-                     <div class="flexbox-container">
-                        <div class="flexbox-calculator">
-                          <input />
-                          
-                            <div class="keys">7</div>
-                            <div class="keys">8</div>
-                            <div class="keys">9</div>
-                            <div class="keys">/</div>
-                            <div class="keys">4</div>
-                            <div class="keys">5</div>
-                            <div class="keys">6</div>
-                            <div class="keys">x</div>
-                            <div class="keys">1</div>
-                            <div class="keys">2</div>
-                            <div class="keys">3</div>
-                            <div class="keys">-</div>
-                            <div class="keys">.</div>
-                            <div class="keys">0</div>
-                            <div class="keys">+</div>
-                            <div class="keys">=</div>
-                            
-                         <section id="anomaly-keys-wrapper">
-                                <section>
-                                    <div class="keys">AC</div>
-                                    <div class="keys">M-</div>
-                                    <div class="keys">M+</div>
-                                    <div class="keys long">OFF</div>
-                                    <div class="keys">ON</div>
-                                </section>
-                                <section>
-                                    <div class="keys tall">C</div>
-                                </section>
-                            </section>
-                        </div>
-                        <!-- flex-box calculator ends -->
-                    </div>
-      
+                    
+                        <body2>
+                        <table class="wrapper2">
+                          <tr>
+                            <td colspan="4"><input id="text1" placeholder="00" type="text"/></td>
+                          </tr>
+                          <tr>
+                            <td><button  value="7" onClick="event1(this.value)">7</button></td>
+                            <td><button  value="8" onClick="event1(this.value)">8</button></td>
+                            <td><button  value="9" onClick="event1(this.value)">9</button></td>
+                            <td><button class="color1"  value="/" onClick="event1(this.value)">/</button></td>
+                          </tr>
+                          <tr>
+                            <td><button  value="4" onClick="event1(this.value)">4</button></td>
+                            <td><button  value="5" onClick="event1(this.value)">5</button></td>
+                            <td><button  value="6" onClick="event1(this.value)">6</button></td>
+                            <td><button class="color1"  value="*" onClick="event1(this.value)">x</button></td>
+                          </tr>
+                          <tr>
+                            <td><button  value="1" onClick="event1(this.value)">1</button></td>
+                            <td><button  value="2" onClick="event1(this.value)">2</button></td>
+                            <td><button  value="3" onClick="event1(this.value)">3</button></td>
+                            <td><button  class="color1"  value="-" onClick="event1(this.value)">-</button></td>
+                          </tr>
+                          <tr>
+                            <td><button onclick="clean()" class="color2" value="C">C</button></td>
+                            <td><button class="color2" value="0" onClick="event1(this.value)">0</button></td>
+                            <td><button class="color2"  value="=" onClick="event2()">=</button></td>
+                            <td><button class="color1"  value="+" onClick="event1(this.value)">+</button></td>
+                          </tr>
+                        </table>
+                        </body2>
+
               </div>
+                    
 
               <footer class="footer"> "no date."Steffan Thorsen, "Time and Date, AS" n.d., https://www.timeanddate.com/clocks/free.html (accessed February 26,2019).
                 
@@ -158,7 +156,45 @@
                 loc.innerHTML = "Longitude:" + position.coords.longitude + "<br> Latitude: " + position.coords.latitude + "<br";
               }
       
-         </script>
+       </script>
+
+         <script>
+         function event1(x){
+		      document.getElementById("text1").value+=x;
+  }
+         function event2(x){
+		     var x = document.getElementById("text1").value;
+	    	document.getElementById("text1").value = eval(x);
+  }
+
+        function clean(){	document.getElementById('text1').value = "";
+                 
+  }
+
+
+        </script>
+
+        <script>
+
+          $(function() {
+
+let $list = $('ul');
+let $newItemForm = $('#newItemForm');
+
+$newItemForm.on('submit', function(e) {
+  e.preventDefault();
+  let text = $('input[type="text"]').val();
+  $list.append(`<li>${text}</li>`);
+  $('input[type="text"]').val('');
+});
+
+$list.on('click', 'li', function() {
+  let $this = $(this);
+  $this.remove();
+});
+
+});
+        </script>
 
 
               

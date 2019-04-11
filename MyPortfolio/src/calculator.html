@@ -1,32 +1,61 @@
+<!DOCTYPE html>
 <html>
 <head>
-<title>HTML Calculator</title>
-<<link rel="stylesheet" href="./calculator-style.css">
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <title>HTML Calculator</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="../calculator-style.css">
 </head>
-<body bgcolor= "#000000" text= "gold">
 
-        
-            
+<body>
+        <table class="container">
+                <tr>
+                  <td colspan="4"><input id="text1" placeholder="00" type="text"/></td>
+                </tr>
+                <tr>
+                  <td><button  value="7" onClick="event1(this.value)">7</button></td>
+                  <td><button  value="8" onClick="event1(this.value)">8</button></td>
+                  <td><button  value="9" onClick="event1(this.value)">9</button></td>
+                  <td><button class="color1"  value="/" onClick="event1(this.value)">/</button></td>
+                </tr>
+                <tr>
+                  <td><button  value="4" onClick="event1(this.value)">4</button></td>
+                  <td><button  value="5" onClick="event1(this.value)">5</button></td>
+                  <td><button  value="6" onClick="event1(this.value)">6</button></td>
+                  <td><button class="color1"  value="*" onClick="event1(this.value)">x</button></td>
+                </tr>
+                <tr>
+                  <td><button  value="1" onClick="event1(this.value)">1</button></td>
+                  <td><button  value="2" onClick="event1(this.value)">2</button></td>
+                  <td><button  value="3" onClick="event1(this.value)">3</button></td>
+                  <td><button  class="color1"  value="-" onClick="event1(this.value)">-</button></td>
+                </tr>
+                <tr>
+                  <td><button onclick="clean()" class="color2" value="C">C</button></td>
+                  <td><button class="color2" value="0" onClick="event1(this.value)">0</button></td>
+                  <td><button class="color2"  value="=" onClick="event2()">=</button></td>
+                  <td><button class="color1"  value="+" onClick="event1(this.value)">+</button></td>
+                </tr>
+
+         </table>
 
 
-<form name="calculator" >
-<input type="button" value="1" onClick="document.calculator.ans.value+='1'">
-<input type="button" value="2" onClick="document.calculator.ans.value+='2'">
-<input type="button" value="3" onClick="document.calculator.ans.value+='3'">
-<input type="button" value="4" onClick="document.calculator.ans.value+='4'">
-<input type="button" value="5" onClick="document.calculator.ans.value+='5'">
-<input type="button" value="6" onClick="document.calculator.ans.value+='6'">
-<input type="button" value="7" onClick="document.calculator.ans.value+='7'">
-<input type="button" value="8" onClick="document.calculator.ans.value+='8'">
-<input type="button" value="9" onClick="document.calculator.ans.value+='9'">
-<input type="button" value="-" onClick="document.calculator.ans.value+='-'">
-<input type="button" value="+" onClick="document.calculator.ans.value+='+'">
-<input type="button" value="*" onClick="document.calculator.ans.value+='*'">
-<input type="button" value="/" onClick="document.calculator.ans.value+='/'">
- 
-<input type="button" value="0" onClick="document.calculator.ans.value+='0'">
-<input type="reset" value="Reset">
-<input type="button" value="=" onClick="document.calculator.ans.value=eval(document.calculator.ans.value)">
-<br>Solution is <input type="textfield" name="ans" value="">
-</form>
+              
+         <script>
+                function event1(x){
+                     document.getElementById("text1").value+=x;
+         }
+                function event2(x){
+                    var x = document.getElementById("text1").value;
+                   document.getElementById("text1").value = eval(x);
+         }
+       
+               function clean(){document.getElementById('text1').value = "";
+                        
+         }
+       
+        </script>
+
 </body>
+</html>
