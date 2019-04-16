@@ -1,17 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Portfolio</title>
-    
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../styles/portfolio-style.css">
+  <link rel="stylesheet" href="../styles/animate.css">
+  <link href="https://fonts.googleapis.com/css?family=Rye" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Asset" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <title>My Portfolio</title>
 </head>
+
 <body>
-    <a href="dashboard.html">Dashboard</a>
-    <a href="nasa.html">nasalanding page</a>
-    <a href="hair.html">hairlanding page</a>
+  
+<header class="container" id="header">
+  <h1 class="animated bounceInLeft delay-1s">Gregg's Portfolio</h1>
+  <span class="logo">GL</span>
+  <nav class="animated fadeInRightBig delay-1s">
     
+         <a href="../index.html"><i class="fas fa-home" style="font-size:30px;"></i></a>
+        
+  </nav>
+
+</header>
+
+  <div class="container" id="form-container">
+            
+    <form action="" method="post" class="STYLE-NAME">
+       <h2><strong>Contact Form</strong></h2>
+       <span>Please Fill In All The Information.</span>
+       <hr/>
+      
+
+     <label>
+       <span>Your Name:</span>
+       <input id="name" type="text"
+       name="name" placeholder="Your Full Name"/>
+     </label>
+
+     <label>
+       <span>Email:</span>
+       <input id="email" type="text" name="name" placeholder="Email"/>
+     </label>
+
+      <label>
+         <span>Location:</span>
+         <input id="location" type="text" name="name" placeholder="Location"/>
+       </label>
+
+       <label>
+        <span>Message:</span>
+        <textarea id="message" name="message" placeholder="Your Message to Me"></textarea>
+       </label>
+ 
+       <label>
+          <input type="button" class="button" value="Submit"/>
+          <input type="button" class="reset" value="Reset"/>
+       </label>
+
+       
+   </form>
+   
+   </div>
+
+   <div class="container" id="iframe-container">
+       <iframe width="500" height="300" src="https://www.youtube.com/embed/2gyxeXW_2T8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+   </div>
+
+   
+
+   <div class="container" id="video-container">
+         <video controls width="500" height="300"
+          source src="/videos/sunset-video.mp4"
+         type="video/mp4">
+                            
+         <p>Your browser doesn't support HTML5 video. Here is
+         a <a href="https://www.myVideo.com">link to the video</a> instead.</p>
+        </video>
+   </div>
+
+   <div class="container" id="links-container">
+          <div>
+            <h3>My Projects</h3>
+            <button class="button2" onclick="myLocation()">Click to get Location</button>
+            <p id="myloc"></p>
+            
+   </div>
+      <a href="dashboard.html"><img src="../images/Screenshot (4).png" alt="Screenshot of dashboard" width="150" height="150"></a>
+            
+      <a href="hair.html"><img src="../images/Screenshot (5).png" alt="Screenshot of hair-page" width="150" height="150"></a>
+            
+      <a href="ticTacToe.html"><img src="../images/Screenshot (6).png" alt="Screenshot of hair-page" width="150" height="150"></a>
+            
+      <a href="BaconIpsum.html"><img src="../images/Screenshot (7).png" alt="Screenshot of ticTacToe" width="150" height="150"></a>
+            
+      <a href="nasa.html"><img src="../images/Screenshot (8).png" alt="Screenshot of BaconIpsum" width="150" height="150"></a>
+
+      <a href="about-page.html"><img src="../images/Screenshot (9).png" alt="Screenshot of About-Me" width="150" height="150"></a>
+
+      <a href="contact-page.html"><img src="../images/Screenshot (10).png" alt="Screenshot of Contact-Page" width="150" height="150"></a>
+
+      <a href="resume.html"><img src="../images/Screenshot (11).png" alt="Screenshot of Resume" width="150" height="150"></a>
+       
+           
+    </div>
+
+        <script type="text/javascript">
+            var loc = document.getElementById('myloc');
+
+            function myLocation() {
+              if(navigator.geolocation){
+                navigator.geolocation.getCurrentPosition(showPosition);
+
+
+              }else{
+
+                loc.innerHTML = "Location Tracking not possible.";
+
+              }
+            }
+                function showPosition(position){
+                  loc.innerHTML = "Longitude:" + position.coords.longitude + "<br> Latitude: " + position.coords.latitude + "<br";
+                }
+        
+      </script>
+
+
 </body>
-</html>
+</html> 
+ 
+
+ <!-- This is a what comment line looks like in HTML -->
+  <!-- The rest of your code goes between here... -->
+  
+     
+<!-- <nav> 
+    <a href="./src/resume.html">Resume</a>
+    <a class="has-border">AboutMe</a>
+    <a href="./src/blog.html">My Blog</a>
+    <a class="has-border">Contact Me</a>
+</nav> -->
+
+ 
+                             
+  
+
+ 
+ 
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+

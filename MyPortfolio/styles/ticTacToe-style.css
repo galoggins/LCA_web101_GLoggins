@@ -1,0 +1,148 @@
+
+*{
+  margin-left: 0;
+  margin-right: 0;
+}
+
+body {
+  background: turquoise;
+
+}
+
+h1 {
+  text-align: center;
+}
+
+#game-board {
+  width:300px;
+  height:300px;
+  max-height:300px;
+  min-height:300px;
+  display:grid; 
+  grid-template-columns:1fr 1fr 1fr;
+  margin-left:calc(50vw - 150px);
+  justify-content: center;
+  text-align: center;
+  font-size: 80px;
+  
+} 
+
+
+
+#command {
+  margin-top: 50px;
+  width: 300px;
+  height: 150px;
+  max-height: 150px;
+  max-width: 150px;
+  margin-left:calc(50vw-150px);
+  text-align: center;
+}
+
+.piece-block {
+  width: 100px;
+  height: 100px;
+  border: 3px solid purple;
+}
+ 
+button {
+  width: 100px;
+  height: 50px;
+  border-radius: 25px;
+  font-size: 24px;
+  font-weight: bolder;
+  text-align: center;
+}
+
+button:hover {
+  background: dodgerblue;
+  border: 2px solid gray;
+
+}
+
+ /* Extra Small and up (Portrait Phones) */
+
+/* Small and up (Landscape Phones) */
+@media (max-width: 576px) {
+
+}
+
+/* Medium and up (Tablets) */
+@media (max-width: 768px) {
+
+}
+
+/* Large and up (Desktops) */
+@media (max-width: 992px) {
+
+}
+
+/* Extra Large and up (Wide Screen Desktops) */
+@media (max-width: 1200px) {
+
+}
+
+  
+  
+  
+ 
+  
+
+ /* .piece-block {
+  width:100px;
+  height:100px;
+  border:solid 2px purple;
+  } */
+  
+  
+ /* #command{
+  margin-top:50px;
+  width:300px;
+  height:150px;
+  max-height:150px;
+  min-height:150px;
+  margin-left:calc(50vw - 150px);
+  text-align:center;
+  }*/
+  
+ /* button{
+  width:100px;
+  height:50px;
+  border-radius:15px;
+  font-size:24px;
+  font-weight:bolder;
+  text-align: center;
+  
+  }*/
+
+
+
+
+
+
+
+  
+ /* #reset-button { 
+    height: 50px;
+    width: 210px;
+    border-radius: 5px;
+    background: midnightblue;
+    color: white; 
+    text-align: center;
+    padding-top: 20px;
+    font-size: 20px;
+    font-family: italic;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    margin-left: -104.5px;
+  } 
+  
+  .grid-spot:hover {
+    cursor: pointer;
+  }
+  
+  #reset-button:hover {
+    background: #CCCCCC;
+    cursor: pointer;
+  } */

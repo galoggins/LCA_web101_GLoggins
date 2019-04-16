@@ -1,3 +1,9 @@
+body {
+  background: white;
+          
+}
+
+
 h1 {
     color: black;
     width: 50%;
@@ -5,9 +11,11 @@ h1 {
 
 }
 
-body {
-    background: white;
-            
+
+ h2 { 
+      
+      
+      
   }
 
   header {
@@ -20,11 +28,19 @@ body {
 
   }
 
-  h2 { 
-      
-      
-      
-  }
+  nav {
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    top: 26px;
+    right: 80px;
+    border: 5px double black;
+    padding: 15px;
+  
+
+ }
+
+  
 
  header p:first-of-type {
       margin-top: -50px;
@@ -38,6 +54,29 @@ body {
   footer {
       background-color: dodgerblue
   }
+
+
+  /* Extra Small and up (Portrait Phones) */
+
+/* Small and up (Landscape Phones) */
+@media (max-width: 576px) {
+
+}
+
+/* Medium and up (Tablets) */
+@media (max-width: 768px) {
+
+}
+
+/* Large and up (Desktops) */
+@media (max-width: 992px) {
+
+}
+
+/* Extra Large and up (Wide Screen Desktops) */
+@media (max-width: 1200px) {
+
+}
 
 
 

@@ -1,0 +1,234 @@
+body {
+    background-image: url(http://sfwallpaper.com/images/background-image-for-website-11.jpg);
+
+
+}
+
+.container {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 10% 40% 40% 10%;
+   /* border: 3px solid blueviolet;
+    line-height: 30px;
+    text-align: center;
+    font-size: 20px;
+    font-style: bold;
+    padding-top: 70px 0; 
+    float: right;
+    height: 1200px;
+    margin: 60px;*/
+    background-color: lightgray;
+   /* color: white;
+    width: 700px;
+    background-color: grey;
+    word-wrap: break-word;*/
+    grid-template-areas: 
+                                                
+    'header header header'
+    'box1 box2 box3'
+    'box1 box2 box3'
+    'footer footer footer';
+     
+   }
+
+h1 {
+
+    color: yellow;
+    font-size: 50px;
+}
+
+.header {
+    grid-area: 'header';
+    text-align: center;
+    border: 6px solid black;
+    background-color: purple;
+    grid-column: 1/-1;
+    
+}
+
+.box-1 {
+    grid-area: box1;
+    justify-self: start;
+    align-self: start;
+    /*grid-column: 1/4;
+    grid-row: 2/4; */
+    border: 3px solid blueviolet;
+    height: 400px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+    
+
+}
+
+.box-2 {
+    grid-area: box2;
+    justify-self: center;
+    align-self: start;
+    grid-column: 1/4;
+    grid-row: 2/4;
+    border: 3px solid blueviolet;
+    height: 400px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+
+}
+
+/*.box-2 img{
+    height: 400%;
+
+} */
+
+
+.box-3 {
+    grid-area: box3;
+    justify-self: end;
+    align-self: start;
+    grid-column: 1/2;
+    grid-row: 4/5;
+    border: 3px solid blueviolet;
+    height: 800px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+}
+
+/*.box-4 {
+    display: grid;
+    grid-area: "box 4";
+    grid column: 2/3;
+    grid-row: 1/-1;
+    border: 3px solid purple;
+    height: 200px;
+    width: 900px;*/
+
+
+
+}
+
+/*.footer {
+    display: grid;
+    grid-area: "footer"
+    grid-column: 1/-1;
+    grid-row: 5/6;
+    border: 2px solid orange;
+    height: 300px;*/
+
+
+
+}
+
+
+.floatleft {
+  float: left;
+  width: 50%;
+  position: relative;
+  left: 0px;
+  top: 0px;
+  z-index: 1;
+
+}
+
+.floatright {
+    float: right;
+    width: 50%;
+
+}
+
+
+
+
+
+.banner { 
+    border: 2px solid black;
+    background-color: purple;
+    color: yellow;
+    text-align: center;
+    font-size: 30px;
+
+}
+
+
+
+img { 
+    float: right;
+    vertical-align: text-top;
+    
+    
+}
+
+/*.container {
+    text-align: center;
+    font-size: 30px;
+    border: 3px solid blueviolet;
+    background-color: gray;
+    grid-gap: 20px;
+    color: yellow;
+} */
+
+
+
+
+
+
+
+   /* .alignleft {
+        float: left;
+    }
+    .alignright {
+        float: right;
+    }
+} */
+
+
+
+
+/* Extra Small and up (Portrait Phones) */
+
+/* Small and up (Landscape Phones) */
+@media (max-width: 576px) {
+
+}
+
+/* Medium and up (Tablets) */
+@media (max-width: 768px) {
+
+}
+
+/* Large and up (Desktops) */
+@media (max-width: 992px) {
+
+}
+
+/* Extra Large and up (Wide Screen Desktops) */
+@media (max-width: 1200px) {
+
+}
+
+
+/*.box-4 {
+    display: grid;
+    grid-area: "box 4";
+    grid column: 2/3;
+    grid-row: 1/-1;
+    border: 3px solid purple;
+    height: 200px;
+    width: 900px;*/
+
+
+
+}
+
+/*.footer {
+    display: grid;
+    grid-area: "footer"
+    grid-column: 1/-1;
+    grid-row: 5/6;
+    border: 2px solid orange;
+    height: 300px;*/
+
+
+
+}
