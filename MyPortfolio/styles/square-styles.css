@@ -8,13 +8,13 @@ body {
     text-align: center;
 } 
 .container:hover .odd {
-  transform: scale(2) translateX(15vw) rotate(1080deg);
+  transform: scale(2) translateX(450px) rotate(1080deg);
 
 
 }
 
 .container:hover .even {
-  transform: scale(.5) translateX(-50vw) rotate(-1080deg);
+  transform: scale(.5) translateX(-90vw) rotate(-1080deg);
 }
 
 .odd {
