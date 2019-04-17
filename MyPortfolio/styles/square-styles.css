@@ -7,7 +7,7 @@ body {
   
 } 
 .container:hover .odd {
-  transform: scale(2) translateX(350px) rotate(1080deg);
+  transform: scale(2) translateX(400px) rotate(1080deg);
 
 
 }
